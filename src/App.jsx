@@ -1,4 +1,3 @@
- 
 import Container from "./components/Container";
 import Flex from "./components/Flex";
 import Image from "./components/Image";
@@ -208,7 +207,12 @@ function App() {
                 as="p"
                 className="font-bold text-white text-[24px] font-Ruhl pr-[150px]"
               />
-              <Button btnText={"Learn MORE"} />
+              <Button
+                btnText={"Learn MORE"}
+                className={
+                  "px-[30px] py-[15px] bg-black rounded-xl font-pop font-semibold text-2xl text-white mt-11"
+                }
+              />
             </div>
             <div className="w-1/2">
               <Flex className={"gap-x-6"}>
@@ -283,9 +287,9 @@ function App() {
                       $45.99 <span className=" text-black pl-10">$35.99</span>
                     </p>
                   </div>
-                </div> 
+                </div>
                 <div className="w-1/2">
-                <Image src={Model4} alt={Model4} className={"w-full "} />
+                  <Image src={Model4} alt={Model4} className={"w-full "} />
                   <div className="bg-white pl-[22px] py-[22px]">
                     <div className="rating rating-sm rating-half">
                       <input
@@ -355,7 +359,7 @@ function App() {
                       $45.99 <span className=" text-black pl-10">$35.99</span>
                     </p>
                   </div>
-                </div> 
+                </div>
               </Flex>
             </div>
           </Flex>
