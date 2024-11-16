@@ -12,7 +12,8 @@ export default {
       },
       fontFamily:{
         pop: ['Poppins'],
-        Ruhl: ["Frank Ruhl Libre"]
+        Ruhl: ["Frank Ruhl Libre"],
+        Podkova:[ "Podkova"]
       },
       maxWidth:{
         bannerContainer: '1270px'

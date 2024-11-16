@@ -127,68 +127,70 @@ function App() {
         </Container>
       </div>
 
-      <div className="relative">
-        <Container>
-          <Flex>
-            <div className="w-1/2 absolute">
-              <Image src={Model2} alt={Model2} />
+      <div className=" pt-28 mb-80">
+        <Container className={"max-w-6xl"}>
+          <Flex className={"justify-between items-center space-x-28"}>
+            <div className="counter_left">
+              <Image img src={Model2} />
             </div>
-            <div className="w-1/2 pl-[125px] ml-[50%] pr-[50px]">
+            <div className="font-poppins font-semibold text-2xl relative">
               <Heading
-                text={"Best Fashion Since 2010"}
                 as={"h3"}
-                className=" text-[64px] font-bold font-Ruhl pb-[75px] "
+                text={"Best Fashion Since 2010"}
+                className={
+                  "text-6xl font-Ruhl font-bold max-w-md mb-10"
+                }
               />
               <Heading
-                text={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, odio pellentesque mattis pulvinar felis. At arcu ornare rhoncus, elementum non viverra."
-                }
                 as={"p"}
-                className="text-[24px] font-semibold font-pop "
+                text={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, odio pellentesque mattis pulvinar felis. At arcu ornare rhoncus, elementum non viverra. "
+                }
+                className={"max-w-md mb-32 font-pop"}
               />
+              <div className="py-16 px-2 rounded-[20px] bg-[#FEECC8] absolute right-[0px] mt-12 z-[-1]">
+                <Flex>
+                  <div className="border-r-2 border-black px-8">
+                    <Heading
+                      as={"p"}
+                      text={"2020"}
+                      className={"font-podkova font-bold text-6xl "}
+                    />
+                    <Heading
+                      as={"p"}
+                      text={"Founded"}
+                      className={"font-medium text-2xl "}
+                    />
+                  </div>
+                  <div className="border-r-2 border-black px-8">
+                    <Heading
+                      as={"p"}
+                      text={"5000+"}
+                      className={"font-podkova font-bold text-6xl "}
+                    />
+                    <Heading
+                      as={"p"}
+                      text={"Product Sold"}
+                      className={"font-medium text-2xl "}
+                    />
+                  </div>
+                  <div className="counter_item px-8">
+                    <Heading
+                      as={"p"}
+                      text={"4500+"}
+                      className={"font-podkova font-bold text-6xl "}
+                    />
+                    <Heading
+                      as={"p"}
+                      text={"Best Reviews"}
+                      className={"font-medium text-2xl "}
+                    />
+                  </div>
+                </Flex>
+              </div>
             </div>
           </Flex>
         </Container>
-        <div className="w-[880px] h-[240px] bg-[#FEECC8] ml-[600px] mt-[180px] rounded-2xl ">
-          <Flex className={"justify-between"}>
-            <div className="  text-black border-r-2 border-black">
-              <Heading
-                text={"2010"}
-                as={"h4"}
-                className=" text-[64px] font-bold pt-[50px] pl-[80px] mr-6"
-              />
-              <Heading
-                text={"Founded"}
-                as={"h4"}
-                className=" text-[28px] font-medium pb-[50px] pl-[80px]"
-              />
-            </div>
-            <div className="  text-black border-r-2 border-black">
-              <Heading
-                text={"5000+"}
-                as={"h4"}
-                className=" text-[64px] font-bold pt-[50px] pl-[80px] mr-6"
-              />
-              <Heading
-                text={"Product"}
-                as={"h4"}
-                className=" text-[28px] font-medium pb-[50px] pl-[80px]"
-              />
-            </div>
-            <div className="">
-              <Heading
-                text={"4500+"}
-                as={"h4"}
-                className=" text-[64px] font-bold pt-[50px] pl-[80px] mr-6"
-              />
-              <Heading
-                text={"Best Reviews"}
-                as={"h4"}
-                className=" text-[28px] font-medium pb-[50px] pl-[80px]"
-              />
-            </div>
-          </Flex>
-        </div>
       </div>
 
       <div className="mt-[120px] bg-[#CFA485] pt-[60px] pb-[170px]">
@@ -205,7 +207,7 @@ function App() {
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac neque, velit tortor quam at donec etiam bibendum sagittis. Libero tempor, lacus amet, scelerisque neque mauris odio risus nec. Nisl, parturient at morbi morbi sit arcu. At integer maecenas tortor non lectus."
                 }
                 as="p"
-                className="font-bold text-white text-[24px] font-Ruhl pr-[150px]"
+                className="font-bold text-white text-[24px] font-Ruhl pr-[60px] leading-[34px]"
               />
               <Button
                 btnText={"Learn MORE"}
@@ -214,10 +216,10 @@ function App() {
                 }
               />
             </div>
-            <div className="w-1/2">
-              <Flex className={"gap-x-6"}>
-                <div className="w-1/2">
-                  <Image src={Model3} alt={Model3} className={"w-full"} />
+            <div className=" mr-14">
+              <Flex>
+                <div>
+                  <Image src={Model3} alt={Model3} className={"max-w-md"} />
                   <div className="bg-white pl-[22px] py-[22px]">
                     <div className="rating rating-sm rating-half">
                       <input
@@ -228,53 +230,53 @@ function App() {
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                         defaultChecked
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                     </div>
 
@@ -288,8 +290,8 @@ function App() {
                     </p>
                   </div>
                 </div>
-                <div className="w-1/2">
-                  <Image src={Model4} alt={Model4} className={"w-full "} />
+                <div className="pl-8">
+                  <Image src={Model4} alt={Model4} className={"max-w-md "} />
                   <div className="bg-white pl-[22px] py-[22px]">
                     <div className="rating rating-sm rating-half">
                       <input
@@ -300,53 +302,53 @@ function App() {
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                         defaultChecked
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-1 bg-green-500"
+                        className="mask mask-star-2 mask-half-1 bg-[#FFAF37]"
                       />
                       <input
                         type="radio"
                         name="rating-10"
-                        className="mask mask-star-2 mask-half-2 bg-green-500"
+                        className="mask mask-star-2 mask-half-2 bg-[#FFAF37]"
                       />
                     </div>
 
